@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Volunteer - Life on Land</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="volunteer.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/qYN421js/logo.png">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="home.html" class="logo-button">
+                <img src="https://i.ibb.co/qYN421js/logo.png" class="rotating-logo" alt="Logo">
+                <span class="logo-text">Life on Land</span>
+            </a>
+        </div>
+        <div class="nav-center">
+            <a href="table.html">Project Table</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="profile.html">User Profile</a>
+            <a href="team.html">Our Team</a>
+            <a href="sitemap.html">Site Map</a>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <section class="fade-in">
+            <h1>🤝 Become a Volunteer</h1>
+            <p style="text-align: center; margin-bottom: 40px; color: #ddd;">Join our global initiative to protect, restore, and promote sustainable use of terrestrial ecosystems.</p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+                <div class="form-card">
+                    <h2>Sign Up Form</h2>
+                    <form id="volunteerForm">
+                        <label for="v-name">Full Name:</label>
+                        <input type="text" id="v-name" required placeholder="Jane Doe">
+
+                        <label for="v-email">Email Address:</label>
+                        <input type="email" id="v-email" required placeholder="jane@example.com">
+
+                        <label for="v-role">Preferred Role:</label>
+                        <select id="v-role">
+                            <option>Tree Planting</option>
+                            <option>Wildlife Monitoring</option>
+                            <option>Community Education</option>
+                            <option>Cleanup Crew</option>
+                        </select>
+
+                        <label for="v-msg">Why do you want to join?</label>
+                        <textarea id="v-msg" rows="4" required placeholder="Tell us your motivation..."></textarea>
+
+                        <button type="submit">Submit Application</button>
+                    </form>
+                </div>
+                
+                <div style="max-width: 400px;">
+                    <img src="https://i.ibb.co/4wRYmhVR/generated-image-f7cbec84-ae83-46f2-8641-58cb58b8789c.png" alt="Volunteer" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                    <div style="margin-top: 20px; background: rgba(0, 50, 20, 0.6); padding: 20px; border-radius: 12px;">
+                        <h3 style="color: #4CAF50;">Why Volunteer?</h3>
+                        <ul style="list-style: none; padding: 0; line-height: 1.8; color: #fff;">
+                            <li>🌱 Help restore degraded land</li>
+                            <li>🐾 Protect endangered wildlife</li>
+                            <li>🌍 Be part of a global community</li>
+                            <li>🎓 Learn valuable conservation skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61577288455530" class="social-button">
+                    <img src="https://i.ibb.co/HLzJkF0n/facebook.png" alt="facebook"> Facebook
+                </a>
+                <a href="https://www.instagram.com/life_on_land_2025" class="social-button">
+                    <img src="https://i.ibb.co/0yvwLwcn/instagram.png" alt="Instagram"> Instagram
+                </a>
+                <a href="content5_ST2(Contact).html" class="social-button">
+                    <img src="https://i.ibb.co/3XyM3RN/contact-us.png" alt="Contact Us"> Contact Us
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('volunteerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert(`Thank you, ${document.getElementById('v-name').value}! Your volunteer application has been submitted.`);
+            this.reset();
+        });
+        
+        window.addEventListener('scroll', function () {
+            const footer = document.querySelector('.footer');
+            if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 50) {
+                footer.classList.add('visible');
+            } else {
+                footer.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>

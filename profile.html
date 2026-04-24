@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Profile - Life on Land</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/qYN421js/logo.png">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="home.html" class="logo-button">
+                <img src="https://i.ibb.co/qYN421js/logo.png" class="rotating-logo" alt="Logo">
+                <span class="logo-text">Life on Land</span>
+            </a>
+        </div>
+        <div class="nav-center">
+            <a href="table.html">Project Table</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="profile.html">User Profile</a>
+            <a href="team.html">Our Team</a>
+            <a href="sitemap.html">Site Map</a>
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <img src="https://i.ibb.co/1tMmkq8G/Chat-GPT-Image-Jun-29-2025-05-07-21-PM.png" alt="Profile Avatar" class="avatar">
+            <div class="profile-info">
+                <h1>W.K.Dulnindu Saranga</h1>
+                <p>🌿 Master Conservationist | Joined: Jan 2025</p>
+                <button class="edit-btn">Edit Profile</button>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>120</h3>
+                <p>Trees Planted</p>
+            </div>
+            <div class="stat-card">
+                <h3>45</h3>
+                <p>Volunteer Hours</p>
+            </div>
+            <div class="stat-card">
+                <h3>12</h3>
+                <p>Events Attended</p>
+            </div>
+            <div class="stat-card">
+                <h3>Level 5</h3>
+                <p>Eco Rank</p>
+            </div>
+        </div>
+
+        <div class="recent-activity">
+            <h2>Recent Activity</h2>
+            <ul>
+                <li><strong>Mar 12:</strong> Participated in the Colombo Coastal Cleanup.</li>
+                <li><strong>Feb 28:</strong> Planted 15 trees in the Kandy Reforestation Drive.</li>
+                <li><strong>Feb 10:</strong> Completed "Soil Health Awareness" online course.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61577288455530" class="social-button">
+                    <img src="https://i.ibb.co/HLzJkF0n/facebook.png" alt="facebook"> Facebook
+                </a>
+                <a href="https://www.instagram.com/life_on_land_2025" class="social-button">
+                    <img src="https://i.ibb.co/0yvwLwcn/instagram.png" alt="Instagram"> Instagram
+                </a>
+                <a href="content5_ST2(Contact).html" class="social-button">
+                    <img src="https://i.ibb.co/3XyM3RN/contact-us.png" alt="Contact Us"> Contact Us
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const footer = document.querySelector('.footer');
+            if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 50) {
+                footer.classList.add('visible');
+            } else {
+                footer.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>

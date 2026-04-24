@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.ibb.co/bgsMmckL/background-image.png');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(34, 139, 34, 0.9);
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo .logo-button { display: flex; align-items: center; text-decoration: none; color: white; }
+.rotating-logo { width: 40px; height: 40px; margin-right: 10px; animation: rotate 10s linear infinite; }
+@keyframes rotate { 100% { transform: rotate(360deg); } }
+.logo-text { font-size: 24px; font-weight: bold; }
+.nav-center a { color: white; text-decoration: none; margin: 0 15px; font-size: 16px; transition: color 0.3s; }
+.nav-center a:hover { color: #f1c40f; }
+
+.sitemap-wrapper {
+    max-width: 900px;
+    margin: 60px auto;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+}
+
+.sitemap-wrapper h1 { text-align: center; color: #4CAF50; font-size: 3em; margin-bottom: 40px; border-bottom: 2px solid rgba(255,255,255,0.1); padding-bottom: 20px; }
+
+.sitemap-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.sitemap-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.2);
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s;
+}
+
+.sitemap-box:hover { transform: translateY(-5px); background: rgba(255, 255, 255, 0.15); }
+.sitemap-box h2 { color: #f1c40f; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 10px; margin-top: 0; }
+.sitemap-box ul { list-style: none; padding: 0; }
+.sitemap-box li { margin-bottom: 15px; }
+
+.sitemap-box a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s, padding-left 0.3s;
+}
+
+.sitemap-box a:hover { color: #4CAF50; padding-left: 10px; font-weight: bold; }
+
+.footer {
+    position: fixed;
+    bottom: -100px;
+    width: 100%;
+    background-color: rgba(34, 139, 34, 0.95);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    transition: bottom 0.5s ease-in-out;
+    z-index: 1000;
+}
+.footer.visible { bottom: 0; }
+.social-button { color: white; text-decoration: none; margin: 0 15px; display: inline-flex; align-items: center; }
+.social-button img { width: 24px; height: 24px; margin-right: 8px; }
