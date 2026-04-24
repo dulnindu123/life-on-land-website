@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - W.K.Dulnindu Saranga</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/qYN421js/logo.png">
+    <link rel="stylesheet" href="pageEditor_validator_ST2.css"> <!-- External CSS link -->
+</head>
+<body>
+    <header id="top">
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="home.html" class="logo-button">
+                    <img src="https://i.ibb.co/qYN421js/logo.png" class="rotating-logo" alt="Logo">
+                    <span class="logo-text">Life on Land</span>
+                </a>
+            </div>
+            <div class="nav-center">
+                <a href="table.html">Project Table</a>
+                <a href="#volenteer">volenteer</a>
+                <a href="#User_Profile">User Profile</a>
+                <a href="#Team">Our Team</a>
+                <a href="#Site_map">Site map</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="stud">
+        <h2>W.K.Dulnindu Saranga, Student 2</h2>
+    </section>
+
+    <div class="container">
+        <main>
+            <section>
+                <h2 id="splash">1. Content Overview</h2>
+                    <h4>W.K.Dulnindu Saranga(Student 2)</h4>
+                    <ul>
+                        <li><a href="#Homepage">Home Page</a></li>
+                        <li><a href="#table">Table Page</a></li>
+                        <li><a href="#content1">Climate regulation page(Content page 1)</a></li>
+                        <li><a href="#content5">Contact Us page (Content page 5)</a></li>
+                        <li><a href="#challenges-lessons">Challenges and Lessons Learned</a></li>
+                        <li><a href="#ref">References</a></li>
+                     </ul> 
+                    
+                    <div class="tech-description-container">
+                        <h2>3. Technical Description:</h2>
+
+                        <section class="TDsection">
+
+                            <h2 id="Homepage">i. Homepage Page</h2>
+                            <p>The Home Page serves as the central hub of the website, introducing users to the "Life on Land" initiative. It includes navigation links to all major 
+                                pages and features a rotating logo, offering users a consistent and engaging entry point to explore further content.</p>
+                            <h3>Link to the validation page</h3> 
+                                <p><a href="validation_ST2.html#homevalidation">Homepage Page validation report</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                            <h3>Link to the page</h3>
+                                <p><a href="home.html">Link to the actual Homepage page.</a></p>  
+                            <h3>HTML Techniques</h3>
+                            <ul>
+                                <li>The <code>&lt;div&gt;</code> tag is used to group layout elements such as the navbar, cards, and content blocks.</li>
+                                <li><code>&lt;section&gt;</code> is used to semantically divide different content sections for accessibility and SEO.</li>
+                                <li><code>&lt;a&gt;</code> and <code>&lt;img&gt;</code> tags are used for navigation and displaying visual content respectively.</li>
+                                <li><code>&lt;aside&gt;</code> is used for the statistics box to provide supplementary content beside the main article.</li>
+                                <li><code>&lt;footer&gt;</code> is used to provide the page's copyright and links.</li>
+                                <li>Interactive areas such as buttons are created using anchor tags styled with CSS classes like <code>.card-button</code>.</li>
+                            </ul>
+                            <h3>Accessibility</h3>
+                            <ul>
+                                <li>The <code>body</code> uses a <code>background-image</code> and <code>filter</code> for visual depth.</li>
+                                <li>The <code>.navbar</code> uses Flexbox (<code>display: flex</code>) to align logo and navigation links horizontally.</li>
+                                <li>The <code>.container</code> and <code>.card</code> classes use Flexbox and <code>box-shadow</code> to create a responsive and modern layout for cards.</li>
+                                <li>Animations like <code>slideIn</code>, <code>fadeIn</code>, and <code>popIn</code> add visual entrance effects to sections.</li>
+                                <li><code>.footer</code> uses <code>position: fixed</code> and visibility toggling via JavaScript to pop up when user scrolls to the bottom.</li>
+                                <li>The <code>.stats-box</code> uses <code>backdrop-filter</code> and transparency to create a glassmorphic appearance.</li>
+                                <li>Buttons and images have hover effects using <code>:hover</code> and <code>transform</code> transitions for interactivity.</li>
+                            </ul>
+                            <h3 id="compliance"> Compliance</h3>
+                            <p>The Home Page complies with JANET regulations by using original content, proper external linking (e.g., logo and favicon from i.ibb.co), and ethical 
+                                presentation. Navigation is clearly labeled and non-deceptive, and all external resources used (like icons or logos) are from reputable, open-hosted 
+                                sources. The page avoids inappropriate or unsafe scripts, ensuring user security and accessibility.</p>
+
+
+                            <h2 id="table">ii. Project Table Page</h2>
+                            <p>This page provides a structured Project Table, displaying key project details and allowing users to track tasks, timelines, or contributors related 
+                                to the "Life on Land" content. It ensures organized presentation and easy reference.</p>
+                            <h3>Link to the validation page</h3>
+                                <p><a href="validation_ST2.html#tablevalidation">Project Table Page validation report</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                            <h3>Link to the page</h3>
+                                <p><a href="table.html">Link to the actual Project Table page.</a></p>
+                            <h3>HTML Techniques</h3>
+                            <ul>
+                                <li>The <code>&lt;table&gt;</code> element is used to organize project data with logical rows and columns for clear readability.</li>
+                                <li><code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> divide the table into headers and body for semantic clarity.</li>
+                                <li><code>&lt;th rowspan=&quot;2&quot;&gt;</code> and <code>&lt;th colspan=&quot;3&quot;&gt;</code> are used for merging cells across rows and columns to enhance header structure.</li>
+                                <li><code>&lt;img&gt;</code> tags are used in the headers to visually represent each conservation category (Forest, Wildlife, Community).</li>
+                                <li><code>&lt;a&gt;</code> tags are applied within table cells to make project statuses interactive (e.g., ✓ Success, ✗ Threatened).</li>
+                                <li><code>&lt;button id="backToTop"&gt;</code> provides user-friendly navigation back to the top of the page.</li>
+                            </ul>
+                            <h3>Accessibility</h3>
+                            <ul>
+                                <li>The <code>body</code> uses a <code>background-image</code> and <code>contrast filter</code> to improve page aesthetics.</li>
+                                <li><code>.table-container</code> centers and styles the table using <code>padding</code>, <code>border-radius</code>, and <code>background-color</code> overlays.</li>
+                                <li><code>.conservation-table</code> uses <code>border-collapse</code> and <code>box-shadow</code> for clean, modern design.</li>
+                                <li><code>thead th img</code> scales table header images uniformly using <code>object-fit</code> and <code>border-radius</code>.</li>
+                                <li>Interactive elements like <code>tr:hover</code> and <code>td:hover</code> apply <code>transform</code> and <code>background-color</code> effects for feedback.</li>
+                                <li><code>th[title]:hover::after</code> uses pseudo-elements to show tooltips with additional context when hovering header images.</li>
+                                <li><code>#backToTop</code> uses <code>position: fixed</code> and <code>opacity</code> transitions for scroll-triggered visibility and hover effects.</li>
+                            </ul>
+                            <h3 id="compliance"> Compliance</h3>
+                            <p>The Table Page presents structured, non-sensitive information in a format that is consistent and free of misleading elements. The data layout respects 
+                                content clarity and simplicity, which aligns with JANET expectations. While the table content is not shown here, as long as personal data is avoided 
+                                and all information is ethically sourced, it remains compliant with privacy and academic data handling standards.</p>
+
+                            <h2 id="content1">iii. Climate Regulation Page</h2>
+                            <p>This page explains how ecosystems like forests and wetlands regulate Earth's climate. It highlights natural carbon absorption, temperature control, and 
+                                the role of biodiversity in stabilizing climate patterns through informative text and visuals.</p>
+                            <h3>Link to the validation page</h3>
+                                <p><a href="validation_ST2.html#content1Val">Climate Regulation Page validation report</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                            <h3>Link to the page</h3>
+                                <p><a href="content1_ST2.html">Link to the actual Climate Regulation page.</a></p>
+                            <h3>HTML Techniques</h3>
+                            <ul>
+                                <li>Uses <code>&lt;section id="climate-regulation"&gt;</code> for a structured, semantic container.</li>
+                                <li>Includes infographics and illustrations using <code>&lt;img&gt;</code> tags with alt descriptions and responsive sizing.</li>
+                                <li>Breaks text into styled <code>&lt;p&gt;</code> blocks for better readability and visual flow.</li>
+                                <li>Lists comparisons between nature and human impacts using <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> inside a flex container.</li>
+                                <li>Interactive content like "What Can You Do?" offers personal engagement with visual icons and centered layout.</li>
+                                <li>Footer reused for consistency across site with fixed position and scroll-triggered animation.</li>
+                                <li>Fade-in effects applied with <code>.fade-in</code> class to enhance user experience on scroll.</li>
+                            </ul>
+                            <h3>Accessibility</h3>
+                            <ul>
+                                <li><code>.fade-in</code> class adds animation using <code>opacity</code> and <code>transform</code> transitions.</li>
+                                <li><code>#climate-regulation h1, h2, h3</code> includes <code>text-shadow</code> and custom coloring for visual emphasis.</li>
+                                <li><code>.content-wrapper</code> applies a semi-transparent background and soft box shadow for a clean container effect.</li>
+                                <li><code>flex-wrap</code> and <code>justify-content</code> used in image-text section for responsive horizontal layout.</li>
+                                <li>Images like the cartoon and chart use <code>border-radius</code> for smooth edges and visual friendliness.</li>
+                                <li><code>.footer</code> uses a slide-up animation with visibility toggled by scroll position via JavaScript.</li>
+                                <li>Common styles reused from main layout (navbar, social buttons, hover effects) for branding consistency.</li>
+                            </ul>
+                            <h3 id="compliance"> Compliance</h3>
+                            <p>This page adheres to compliance guidelines by providing factual, educational content on climate regulation without political or commercial bias. 
+                                All visuals are hosted from external free sources or generated materials, avoiding copyright issues. The use of simple language, image alt texts, 
+                                and structured sections supports accessibility and aligns with good practice under JANET publication rules.</p>
+
+                            <h2 id="content5">iv. Contact Us Page</h2>
+                            <p>The Contact Us page provides social media links, feedback options, and a clear pathway for visitors to connect with the creators. It supports user 
+                                engagement while maintaining a clean, accessible design.</p>
+                            <h3>Link to the validation page</h3>
+                                <p><a href="validation_ST2.html#content5Val">Contact Us Page validation report</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+                            <h3>Link to the page</h3>
+                                <p><a href="content5_ST2(Contact).html">Link to the actual Contact page.</a></p>
+                            <h3>HTML Techniques</h3>
+                            <ul>
+                                <li>The <strong>&lt;div&gt;</strong> tag is used to group sections for layout and styling purposes.</li>
+                                <li><strong>&lt;form&gt;</strong> is used to create the contact form structure to collect user input.</li>
+                                <li><strong>&lt;input&gt;</strong> and <strong>&lt;textarea&gt;</strong> tags are used for text fields and multi-line message input respectively, ensuring appropriate user interaction.</li>
+                                <li><strong>&lt;button&gt;</strong> is used to submit the form, enhancing usability with clear call-to-action styling.</li>
+                                <li><strong>&lt;section&gt;</strong> is used to semantically separate the contact form area from the rest of the page.</li>
+                            </ul>
+                            <h3>Accessibility</h3>
+                            <ul>
+                                <li>The <strong>body</strong> is styled with a background image to improve visual appeal.</li>
+                                <li>The <strong>.contact-wrapper</strong> uses <code>display: flex;</code> and <code>justify-content: center;</code> to center the contact form on the page.</li>
+                                <li>The <strong>.contact-container</strong> applies background blur using <code>backdrop-filter: blur(10px);</code> and transparency for a modern, clean design.</li>
+                                <li><strong>Form inputs</strong> are styled with padding, border-radius, and font size for better readability and user interaction.</li>
+                                <li><strong>Hover effects</strong> are applied to buttons for interactive feedback using <code>background-color</code> transitions.</li>
+                                <li>The page uses a <strong>responsive design</strong> by using <code>max-width</code> and <code>flex-wrap</code> to adapt to smaller screens.</li>
+                            </ul>
+                            <h3 id="compliance"> Compliance</h3>
+                            <p>This page remains compliant by offering safe links to verified platforms like Facebook and Instagram and avoids collecting sensitive data. 
+                                The social icons are clearly labeled, and no forms are present that might mishandle user information. It supports transparency and user control, 
+                                upholding JANET standards around data protection and user interaction.</p>
+                        </section>
+                    </div>
+
+                    <section id="challenges-lessons" class="section-wrapper">
+                    <h2>Challenges and Lessons Learned</h2>
+
+                    <div class="subsection">
+                        <h3>Challenges Encountered</h3>
+
+                        <h4>Maintaining Design Consistency Across Pages</h4>
+                        <p>
+                        One of the biggest challenges was ensuring visual and structural consistency between multiple web pages 
+                        (like <code>Culture.html</code> and <code>WP.html</code>). Each page had different content blocks (e.g., cards vs. infographics), but they had to feel like part of the same site. Matching layouts, padding, and colors across sections required fine-tuning in the shared CSS rules.
+                        </p>
+
+                        <h4>Navbar and Footer Positioning</h4>
+                        <p>
+                        Initially, the navigation bar and footer did not behave as expected - the navbar didn't remain visible during scroll, and the footer didn't animate in or out. This was resolved by integrating fixed positioning and JavaScript scroll detection to toggle the <code>.visible</code> class dynamically for the footer.
+                        </p>
+
+                        <h4>Image Alignment and Responsiveness</h4>
+                        <p>
+                        On smaller screens, infographics and images (e.g., the cartoon-style purification image in <code>WP.html</code>) either overlapped with text or were stretched. The fix involved adding <code>flex-wrap</code>, width limits, and <code>max-width</code> constraints in the <code>.infographic-section</code> and <code>.action-box</code> to ensure clean responsiveness.
+                        </p>
+
+                        <h4>Text Contrast and Readability</h4>
+                        <p>
+                        Due to the textured background image used in the body, some text sections became hard to read. This was resolved by layering semi-transparent white backgrounds (<code>rgba</code>) behind content areas like <code>.content-wrapper</code> and <code>.call-to-action</code>.
+                        </p>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>Lessons Learned</h3>
+
+                        <h4>Component Reusability Matters</h4>
+                        <p>
+                        Reusing shared components (like navbars, footers, and CSS animation classes) reduces bugs and ensures consistency across pages.
+                        </p>
+
+                        <h4>Testing Across Devices is Crucial</h4>
+                        <p>
+                        Manual testing using different screen widths helped identify layout-breaking issues early. Using flexbox and media queries ensured the site looks good on both desktop and mobile.
+                        </p>
+
+                        <h4>JavaScript Adds Interactivity, But Needs Control</h4>
+                        <p>
+                        Implementing scroll-triggered animations and a sticky footer required carefully timed DOM queries and event listeners. Too many animations at once can hurt performance and user experience, so controlling visibility through scroll thresholds was key.
+                        </p>
+                    </div>
+                    </section>
+            </section>
+
+            <section class="reference">
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/qYN421js/logo.png">https://i.ibb.co/qYN421js/logo.png</a> (Last accessed: 19 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/bgsMmckL/background-image.png">https://i.ibb.co/bgsMmckL/background-image.png</a> (Last accessed: 19 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/n8MNVRps/Chat-GPT-Image-Jun-16-2025-12-29-55-PM.png">https://i.ibb.co/n8MNVRps/Chat-GPT-Image-Jun-16-2025-12-29-55-PM.png</a> (Last accessed: 15 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/20ZPBdwd/Chat-GPT-Image-Jun-16-2025-12-14-49-PM.png">https://i.ibb.co/20ZPBdwd/Chat-GPT-Image-Jun-16-2025-12-14-49-PM.png</a> (Last accessed: 17 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/FkTKQvCk/Chat-GPT-Image-Jun-16-2025-12-10-33-PM.png">https://i.ibb.co/FkTKQvCk/Chat-GPT-Image-Jun-16-2025-12-10-33-PM.png</a> (Last accessed: 17 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/G3nrxdM3/Chat-GPT-Image-Jun-15-2025-09-49-01-PM.png">https://i.ibb.co/G3nrxdM3/Chat-GPT-Image-Jun-15-2025-09-49-01-PM.png</a> (Last accessed: 15 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/20ppKB3k/soil.png">https://i.ibb.co/20ppKB3k/soil.png</a> (Last accessed: 17 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/7NgsTQZd/Chat-GPT-Image-Jun-16-2025-06-11-39-PM.png">https://i.ibb.co/7NgsTQZd/Chat-GPT-Image-Jun-16-2025-06-11-39-PM.png</a> (Last accessed: 27 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/zWQTYG0h/climate-regulation-1024x1024.png">https://i.ibb.co/zWQTYG0h/climate-regulation-1024x1024.png</a> (Last accessed: 27 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/v47FS0z4/feedback.png">https://i.ibb.co/v47FS0z4/feedback.png</a> (Last accessed: 19 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/3XyM3RN/contact-us.png">https://i.ibb.co/3XyM3RN/contact-us.png</a> (Last accessed: 19 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/0yvwLwcn/instagram.png">https://i.ibb.co/0yvwLwcn/instagram.png</a> (Last accessed: 19 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/HLzJkF0n/facebook.png">https://i.ibb.co/HLzJkF0n/facebook.png</a> (Last accessed: 19 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/1tMmkq8G/Chat-GPT-Image-Jun-29-2025-05-07-21-PM.png">https://i.ibb.co/1tMmkq8G/Chat-GPT-Image-Jun-29-2025-05-07-21-PM.png</a> (Last accessed: 20 June 2025).</li><br>
+                        <li>imgbb (2025) <i>imgbb.</i> Available at: <a href="https://i.ibb.co/LhrbMQMr/Chat-GPT-Image-Jun-29-2025-06-15-53-PM.png">https://i.ibb.co/LhrbMQMr/Chat-GPT-Image-Jun-29-2025-06-15-53-PM.png</a> (Last accessed: 20 June 2025).</li><br>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <aside>
+            <h3>Core pages developed:</h3>
+
+            <ul class="top-level-ul">
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="home.html">Home page </a></li>
+                        <li><a href="table.html">Table page</a></li>
+                        <li><a href="content1_ST2.html">Content page 1</a></li>
+                        <li><a href="content5_ST2.html">Content page 5</a></li>
+                        <li><a href="validation_ST2.html">Validation Page ST2</a></li>
+                    </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61577288455530" class="social-button">
+                    <img src="https://i.ibb.co/HLzJkF0n/facebook.png" alt="facebook" > Facebook
+                </a>
+                <a href="https://www.instagram.com/life_on_land_2025" class="social-button">
+                    <img src="https://i.ibb.co/0yvwLwcn/instagram.png" alt="Instagram"> Instagram
+                </a>
+                <a href="#Feedback" class="social-button">
+                    <img src="https://i.ibb.co/v47FS0z4/feedback.png" alt="Feedback"> Feedback
+                </a>
+                <a href="content5_ST2(Contact).html" class="social-button">
+                    <img src="https://i.ibb.co/3XyM3RN/contact-us.png" alt="Contact Us"> Contact Us
+                </a><br><br>
+                <a href="pageEditor_ST2.html" class="social-button"> Student 2 page editor</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+            window.addEventListener('scroll', function () {
+                const footer = document.querySelector('.footer');
+                const scrollTop = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+
+                // When user scrolls near the bottom (e.g. within 100px)
+                if (scrollTop + windowHeight >= documentHeight - 50) {
+                    footer.classList.add('visible');
+                } else {
+                    footer.classList.remove('visible');
+                }
+            });
+    </script>
+</body>
+</html>

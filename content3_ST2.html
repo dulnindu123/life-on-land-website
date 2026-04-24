@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Soil Health and Food Security</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="content3_ST2.css">
+        <link rel="icon" type="image/png" href="https://i.ibb.co/qYN421js/logo.png">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="home.html" class="logo-button">
+                    <img src="https://i.ibb.co/qYN421js/logo.png" class="rotating-logo" alt="Logo">
+                    <span class="logo-text">Life on Land</span>
+                </a>
+            </div>
+            <div class="nav-center">
+                <a href="table.html">Project Table</a>
+                <a href="#volenteer">volenteer</a>
+                <a href="#User_Profile">User Profile</a>
+                <a href="#Team">Our Team</a>
+            </div>
+        </div>
+
+        
+        <div class="content-wrapper fade-in">
+        <section id="soil-section">
+        <div class="hero-text">
+            <h1>🌾 Soil Health & Food Security</h1>
+            <p>
+            Soil isn’t just dirt — it's a living system that holds the key to human survival. Healthy soil stores water, supports plant growth, cycles nutrients, and even captures 
+            carbon. When soil thrives, so does life.
+            </p>
+        </div>
+
+        <div class="soil-columns">
+            <div class="column-card">
+            <h2>🌱 Why Healthy Soil Matters</h2>
+            <ul>
+                <li>Enables crops to grow with better nutrients</li>
+                <li>Improves water retention and reduces erosion</li>
+                <li>Supports biodiversity below and above ground</li>
+                <li>Reduces reliance on chemical fertilizers</li>
+            </ul>
+            </div>
+
+            <div class="column-card">
+            <h2>🍽️ Soil & Food Security</h2>
+            <p>
+                Over 95% of our food comes from the soil. But with land degradation, urbanization, and poor farming practices, the soil is losing its strength — putting global food supplies at risk. By restoring soil health, we ensure access to affordable, nutritious food for all.
+            </p>
+            </div>
+        </div>
+
+        <div class="soil-infographic">
+            <h2>🧠 Did You Know?</h2>
+            <img src="https://i.ibb.co/wbNzRVf/Soil-Health-Infographic-Half-Size.png" alt="Soil Infographic">
+        </div>
+
+        <div class="call-action">
+            <h2>🌍 What Can You Do?</h2>
+            <ul>
+            <li>Compost food waste to enrich soil naturally</li>
+            <li>Support local farms using sustainable practices</li>
+            <li>Plant native species that strengthen soil ecosystems</li>
+            <li>Educate others on how soil supports life</li>
+            </ul>
+        </div>
+        </section>
+    </div>
+
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61577288455530" class="social-button">
+                        <img src="https://i.ibb.co/HLzJkF0n/facebook.png" alt="facebook" > Facebook
+                    </a>
+                    <a href="https://www.instagram.com/life_on_land_2025" class="social-button">
+                        <img src="https://i.ibb.co/0yvwLwcn/instagram.png" alt="Instagram"> Instagram
+                    </a>
+                    <a href="#Feedback" class="social-button">
+                        <img src="https://i.ibb.co/v47FS0z4/feedback.png" alt="Feedback"> Feedback
+                    </a>
+                    <a href="content5_ST2(Contact).html" class="social-button">
+                        <img src="https://i.ibb.co/3XyM3RN/contact-us.png" alt="Contact Us"> Contact Us
+                    </a><br><br>
+                <a href="pageEditor_ST2.html" class="social-button"> Student 2 page editor</a>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            window.addEventListener('scroll', function () {
+                const footer = document.querySelector('.footer');
+                const scrollTop = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+
+                // When user scrolls near the bottom (e.g. within 100px)
+                if (scrollTop + windowHeight >= documentHeight - 50) {
+                    footer.classList.add('visible');
+                } else {
+                    footer.classList.remove('visible');
+                }
+            });
+            const faders = document.querySelectorAll('.fade-in');
+            function handleScroll() {
+            faders.forEach(fade => {
+                const rect = fade.getBoundingClientRect();
+                if (rect.top <= window.innerHeight - 100) {
+                fade.classList.add('visible');
+                }
+            });
+            }
+            window.addEventListener('scroll', handleScroll);
+            window.addEventListener('load', handleScroll);
+        </script>
+    </body>
+</html>

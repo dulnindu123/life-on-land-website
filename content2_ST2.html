@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Water Cycling & Purification</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="content2_ST2.css">
+        <link rel="icon" type="image/png" href="https://i.ibb.co/qYN421js/logo.png">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <a href="home.html" class="logo-button">
+                    <img src="https://i.ibb.co/qYN421js/logo.png" class="rotating-logo" alt="Logo">
+                    <span class="logo-text">Life on Land</span>
+                </a>
+            </div>
+            <div class="nav-center">
+                <a href="table.html">Project Table</a>
+                <a href="#volenteer">volenteer</a>
+                <a href="#User_Profile">User Profile</a>
+                <a href="#Team">Our Team</a>
+            </div>
+        </div>
+
+
+        <div class="content-wrapper">
+            <section id="water-cycle" class="fade-in">
+                <h1>💧 Water Cycling & Purification</h1>
+                <p>
+                    Water is constantly on the move, cycling through evaporation, condensation, precipitation, and infiltration. 
+                    Nature's water cycle ensures clean, fresh water flows through forests, rivers, soil, and underground reservoirs — 
+                    keeping all life hydrated and healthy.
+                </p>
+
+                <div class="infographic-section">
+                    <img src="https://i.ibb.co/4wRYmhVR/generated-image-f7cbec84-ae83-46f2-8641-58cb58b8789c.png" alt="Water Cycle Diagram">
+                    <div class="info-text">
+                        <h2>🌦️ Nature's Process</h2>
+                        <ul style="text-align: justify; list-style-position: inside; font-size: 20px; line-height: 1.6; padding: 0 10px;">
+                            <li><strong>Evaporation:</strong> Sunlight turns water into vapor</li>
+                            <li><strong>Condensation:</strong> Vapor forms clouds</li>
+                            <li><strong>Precipitation:</strong> Rain replenishes Earth</li>
+                            <li><strong>Filtration:</strong> Soil and plants purify water naturally</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="water-machine">
+                    <h2>💦 Nature's Water Purification Machine</h2>
+                    <p>
+                    Wetlands, forests, and even soil act like living filters. They remove impurities, balance pH, and recharge groundwater. 
+                    Without these natural systems, clean drinking water would be harder — and more expensive — to get.
+                    </p>
+                </div>
+                <div class="action-box" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 30px; margin-top: 50px;">
+                    <img src="https://i.ibb.co/wZT0wMWP/generated-image-f332faa6-beae-4d6b-a664-e4198a1388af.png" alt="Nature Purification Cartoon" style="max-width: 400px; width: 100%; border-radius: 12px;">
+
+                    <div style="flex: 1; min-width: 280px; max-width: 500px;">
+                        <h3 style="text-align: center;">🚿 How You Can Help</h3>
+                        <ul style="text-align: justify; list-style-position: inside; font-size: 20px; line-height: 1.6; padding: 0 10px;">
+                        <li>Fix leaks and use water-efficient appliances to conserve fresh water.</li>
+                        <li>Avoid dumping chemicals or waste into drains, lakes, or rivers to prevent pollution.</li>
+                        <li>Support reforestation and wetland restoration to enhance natural filtration systems.</li>
+                        <li>Educate your community about the importance of protecting our water cycle.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 MyWebsite. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61577288455530" class="social-button">
+                        <img src="https://i.ibb.co/HLzJkF0n/facebook.png" alt="facebook" > Facebook
+                    </a>
+                    <a href="https://www.instagram.com/life_on_land_2025" class="social-button">
+                        <img src="https://i.ibb.co/0yvwLwcn/instagram.png" alt="Instagram"> Instagram
+                    </a>
+                    <a href="#Feedback" class="social-button">
+                        <img src="https://i.ibb.co/v47FS0z4/feedback.png" alt="Feedback"> Feedback
+                    </a>
+                    <a href="content5_ST2(Contact).html" class="social-button">
+                        <img src="https://i.ibb.co/3XyM3RN/contact-us.png" alt="Contact Us"> Contact Us
+                    </a><br><br>
+                <a href="pageEditor_ST2.html" class="social-button"> Student 2 page editor</a>
+                </div>
+            </div>
+        </footer>
+
+
+        <script>
+            window.addEventListener('scroll', function () {
+                const footer = document.querySelector('.footer');
+                const scrollTop = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+
+                // When user scrolls near the bottom (e.g. within 100px)
+                if (scrollTop + windowHeight >= documentHeight - 50) {
+                    footer.classList.add('visible');
+                } else {
+                    footer.classList.remove('visible');
+                }
+            });
+            const faders = document.querySelectorAll('.fade-in');
+
+            function handleScroll() {
+                faders.forEach(fade => {
+                const rect = fade.getBoundingClientRect();
+                if (rect.top <= window.innerHeight - 100) {
+                    fade.classList.add('visible');
+                }
+                });
+            }
+
+            window.addEventListener('scroll', handleScroll);
+            window.addEventListener('load', handleScroll);
+        </script>
+    </body>
+</html>
