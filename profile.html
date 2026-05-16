@@ -1,37 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <title>User Profile - Life on Land</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <title>Your Eco Profile | Life on Land</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="global.css"><link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="global.css">
     <link rel="icon" type="image/png" href="https://i.ibb.co/qYN421js/logo.png">
+    <style>
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 40px;
+            object-fit: cover;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border: 5px solid white;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+        .stat-card {
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            transition: var(--transition);
+        }
+        .stat-card:hover { transform: translateY(-10px); background: var(--primary); color: white; }
+        .stat-card h3 { color: inherit; font-size: 32px; margin-bottom: 5px; }
+        .stat-card p { font-weight: 700; text-transform: uppercase; font-size: 11px; letter-spacing: 1px; opacity: 0.8; }
+        
+        .activity-list { list-style: none; }
+        .activity-item {
+            background: rgba(0,0,0,0.02);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: var(--transition);
+        }
+        .activity-item:hover { background: white; transform: translateX(10px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .activity-date { font-weight: 900; color: var(--accent); font-size: 13px; min-width: 80px; }
+    </style>
 </head>
 <body>
     <div class="navbar">
         <div class="navbar-logo">
             <a href="index.html" class="logo-button">
-                <img src="https://i.ibb.co/qYN421js/logo.png" class="rotating-logo" alt="Logo">
+                <img src="https://i.ibb.co/qYN421js/logo.png" style="height: 60px; border-radius: 50%;" alt="Logo">
                 <span class="logo-text">Life on Land</span>
             </a>
         </div>
         <div class="nav-center">
+            <a href="index.html">Home</a>
             <a href="table.html">Project Table</a>
             <a href="volunteer.html">Volunteer</a>
-            <a href="profile.html">User Profile</a>
+            <a href="profile.html" class="active">User Profile</a>
             <a href="team.html">Our Team</a>
-            <a href="sitemap.html">Site Map</a>
         </div>
     </div>
 
-    <div class="profile-container">
+    <div class="content-wrapper">
         <div class="profile-header">
-            <img src="https://i.ibb.co/1tMmkq8G/Chat-GPT-Image-Jun-29-2025-05-07-21-PM.png" alt="Profile Avatar" class="avatar">
-            <div class="profile-info">
-                <h1>W.K.Dulnindu Saranga</h1>
-                <p>🌿 Master Conservationist | Joined: Jan 2025</p>
-                <button class="edit-btn">Edit Profile</button>
+            <img src="https://i.ibb.co/1tMmkq8G/Chat-GPT-Image-Jun-29-2025-05-07-21-PM.png" alt="Avatar" class="avatar">
+            <div class="header-info">
+                <h1>W.K.Dulnindu <span style="color: var(--accent);">Saranga</span></h1>
+                <p style="font-size: 18px; color: #666;">🌿 Master Conservationist | Eco-Rank: <b>Level 5</b></p>
+                <div style="margin-top: 20px; display: flex; gap: 10px;">
+                    <button class="action-button">Edit Profile</button>
+                    <button class="action-button" style="background: #f8f9fa; color: #333;">Settings</button>
+                </div>
             </div>
         </div>
 
@@ -50,48 +104,36 @@
             </div>
             <div class="stat-card">
                 <h3>Level 5</h3>
-                <p>Eco Rank</p>
+                <p>Eco Ranking</p>
             </div>
         </div>
 
-        <div class="recent-activity">
-            <h2>Recent Activity</h2>
-            <ul>
-                <li><strong>Mar 12:</strong> Participated in the Colombo Coastal Cleanup.</li>
-                <li><strong>Feb 28:</strong> Planted 15 trees in the Kandy Reforestation Drive.</li>
-                <li><strong>Feb 10:</strong> Completed "Soil Health Awareness" online course.</li>
-            </ul>
-        </div>
+        <h2>Recent Activity</h2>
+        <ul class="activity-list">
+            <li class="activity-item">
+                <span class="activity-date">MAR 12</span>
+                <p>Participated in the <b>Colombo Coastal Cleanup</b> initiative.</p>
+            </li>
+            <li class="activity-item">
+                <span class="activity-date">FEB 28</span>
+                <p>Successfully planted 15 native trees in the <b>Kandy Reforestation Drive</b>.</p>
+            </li>
+            <li class="activity-item">
+                <span class="activity-date">FEB 10</span>
+                <p>Completed the <b>"Soil Health Awareness"</b> advanced online certification.</p>
+            </li>
+        </ul>
     </div>
 
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/profile.php?id=61577288455530" class="social-button">
-                    <img src="https://i.ibb.co/HLzJkF0n/facebook.png" alt="facebook"> Facebook
-                </a>
-                <a href="https://www.instagram.com/life_on_land_2025" class="social-button">
-                    <img src="https://i.ibb.co/0yvwLwcn/instagram.png" alt="Instagram"> Instagram
-                </a>
-                <a href="content5_ST2(Contact).html" class="social-button">
-                    <img src="https://i.ibb.co/3XyM3RN/contact-us.png" alt="Contact Us"> Contact Us
-                </a>
+            <p>&copy; 2025 Life on Land Initiative. All rights reserved.</p>
+            <div class="social-links" style="margin-top: 30px;">
+                <a href="https://www.facebook.com" class="social-button">Facebook</a>
+                <a href="https://www.instagram.com" class="social-button">Instagram</a>
+                <a href="content5_ST2(Contact).html" class="social-button">Contact Us</a>
             </div>
         </div>
     </footer>
-
-    <script>
-        window.addEventListener('scroll', function () {
-            const footer = document.querySelector('.footer');
-            if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 50) {
-                footer.classList.add('visible');
-            } else {
-                footer.classList.remove('visible');
-            }
-        });
-    </script>
 </body>
 </html>
-
-

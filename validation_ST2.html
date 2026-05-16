@@ -1,128 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <title>Validation Reports | W.K.Dulnindu Saranga</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validator Page Student - W.K.Dulnindu Saranga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="global.css">
     <link rel="icon" type="image/png" href="https://i.ibb.co/qYN421js/logo.png">
-    <link rel="stylesheet" href="global.css"><link rel="stylesheet" href="pageEditor_validator_ST2.css"> <!-- External CSS link -->
+    <style>
+        .validation-section { background: white; padding: 40px; border-radius: 30px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.02); }
+        .validation-section h2 { color: var(--accent); border-bottom: 2px solid #f8f9fa; padding-bottom: 10px; margin-bottom: 20px; }
+        .validation-img { width: 100%; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin: 20px 0; border: 1px solid rgba(0,0,0,0.05); }
+        .nav-sidebar { position: sticky; top: 110px; background: white; padding: 30px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .nav-sidebar a { display: block; padding: 10px 0; text-decoration: none; color: #666; font-weight: 500; transition: var(--transition); }
+        .nav-sidebar a:hover { color: var(--primary); transform: translateX(5px); }
+        .layout-grid { display: grid; grid-template-columns: 250px 1fr; gap: 40px; align-items: flex-start; }
+        @media (max-width: 992px) { .layout-grid { grid-template-columns: 1fr; } .nav-sidebar { position: static; } }
+    </style>
 </head>
 <body>
-    <header id="top">
-        <div class="navbar">
-            <div class="navbar-logo">
-                <a href="index.html" class="logo-button">
-                    <img src="https://i.ibb.co/qYN421js/logo.png" class="rotating-logo" alt="Logo">
-                    <span class="logo-text">Life on Land</span>
-                </a>
-            </div>
-            <div class="nav-center">
-                <a href="table.html">Project Table</a>
-                <a href="volunteer.html">Volunteer</a>
-                <a href="profile.html">User Profile</a>
-                <a href="team.html">Our Team</a>
-                <a href="sitemap.html">Site Map</a>
-            </div>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html" class="logo-button">
+                <img src="https://i.ibb.co/qYN421js/logo.png" style="height: 60px; border-radius: 50%;" alt="Logo">
+                <span class="logo-text">Life on Land</span>
+            </a>
         </div>
-    </header>
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="table.html">Project Table</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="team.html">Our Team</a>
+            <a href="sitemap.html">Site Map</a>
+        </div>
+    </div>
 
-    <section class="stud">
-        <h2>W.K.Dulnindu Saranga, Student 2</h2>
-    </section>
+    <div class="content-wrapper" style="max-width: 1300px;">
+        <h1 style="text-align: center;">Validation <span style="color: var(--accent);">Reports</span></h1>
+        <p style="text-align: center; color: #666; font-size: 18px; margin-bottom: 60px;">Evidence of code compliance and structural integrity for the Life on Land platform.</p>
 
-    <div class="container">
-        <main>
+        <div class="layout-grid">
+            <aside class="nav-sidebar">
+                <h3>Report List</h3>
+                <a href="#homevalidation">Home Page</a>
+                <a href="#tablevalidation">Project Table</a>
+                <a href="#content1Val">Climate Page</a>
+                <a href="#content5Val">Contact Page</a>
+            </aside>
 
+            <main>
+                <section id="homevalidation" class="validation-section">
+                    <h2>Home Page Report</h2>
+                    <p>Status: <span class="status-pill status-success">Passed</span></p>
+                    <img src="https://i.ibb.co/MYHCJjb/HScreenshot-2025-07-06-015715.png" alt="Home Validation" class="validation-img">
+                    <a href="pageEditor_ST2.html#Homepage" class="action-button" style="font-size: 12px; padding: 10px 20px;">Back to Editor</a>
+                </section>
 
-            <section>
-                <h2 id="homevalidation">Homepage Page validation report</h2>
-                    <img src="https://i.ibb.co/MYHCJjb/HScreenshot-2025-07-06-015715.png">
-                                    
-                <h3>Back to Page Editor Homepage</h3>
-                    <p><a href="pageEditor_ST2.html#Homepage">Link back to the "Homepage Page" section of the Page Editor.</a></p>
-            </section>
+                <section id="tablevalidation" class="validation-section">
+                    <h2>Table Page Report</h2>
+                    <p>Status: <span class="status-pill status-success">Passed</span></p>
+                    <img src="https://i.ibb.co/PZph010y/TScreenshot-2025-07-06-015800.png" alt="Table Validation" class="validation-img">
+                    <a href="pageEditor_ST2.html#table" class="action-button" style="font-size: 12px; padding: 10px 20px;">Back to Editor</a>
+                </section>
 
-            <section>
-                <h2 id="tablevalidation">Project Table Page validation report</h2>
-                    <img src="https://i.ibb.co/PZph010y/TScreenshot-2025-07-06-015800.png">
-                                    
-                <h3>Back to Page Editor page</h3>
-                    <p><a href="pageEditor_ST2.html#table">Link back to the "Project Table Page" section of the Page Editor.</a></p>
-            </section></a></p>
+                <section id="content1Val" class="validation-section">
+                    <h2>Climate Page Report</h2>
+                    <p>Status: <span class="status-pill status-success">Passed</span></p>
+                    <img src="https://i.ibb.co/KxvmS8Qc/CRScreenshot-2025-07-06-015306.png" alt="Climate Validation" class="validation-img">
+                    <a href="pageEditor_ST2.html#content1" class="action-button" style="font-size: 12px; padding: 10px 20px;">Back to Editor</a>
+                </section>
 
-            <section>
-                <h2 id="content1Val">Climate Regulation Page validation report</h2>
-                    <img src="https://i.ibb.co/KxvmS8Qc/CRScreenshot-2025-07-06-015306.png">
-                                    
-                <h3>Back to Page Editor page</h3>
-                    <p><a href="pageEditor_ST2.html#content1">Link back to the "Climate Regulation Page" section of the Page Editor.</a></p>
-            </section></a></p>
-
-            <section>
-                <h2 id="content5Val">Contact Us Page validation report</h2>
-                    <img src="https://i.ibb.co/FLPpPdYW/CUScreenshot-2025-07-06-015627.png">
-                                    
-                <h3>Back to Page Editor page</h3>
-                    <p><a href="pageEditor_ST2.html#content5">Link back to the "Contact Us Page" section of the Page Editor.</a></p>
-            </section></a></p>
-
-            <p class="top"><a href="#top">Go top</a></p>
-        </main>
-
-        <!-- Sidebar area -->
-        <aside>
-            <h3>Core pages developed:</h3>
-            <ul class="top-level-ul">
-                <li>Student 2</li>
-                    <ul>
-                        <li><a href="index.html">Home page </a></li>
-                        <li><a href="table.html">Table page</a></li>
-                        <li><a href="content1_ST2.html">Content page 1</a></li>
-                        <li><a href="content5_ST2(Contact).html">Content page 5</a></li>
-                        <li><a href="pageEditor_ST2.html">Page Editor ST2</a></li>
-                    </ul>
-            </ul>
-        </aside>
+                <section id="content5Val" class="validation-section">
+                    <h2>Contact Page Report</h2>
+                    <p>Status: <span class="status-pill status-success">Passed</span></p>
+                    <img src="https://i.ibb.co/FLPpPdYW/CUScreenshot-2025-07-06-015627.png" alt="Contact Validation" class="validation-img">
+                    <a href="pageEditor_ST2.html#content5" class="action-button" style="font-size: 12px; padding: 10px 20px;">Back to Editor</a>
+                </section>
+            </main>
+        </div>
     </div>
 
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/profile.php?id=61577288455530" class="social-button">
-                    <img src="https://i.ibb.co/HLzJkF0n/facebook.png" alt="facebook" > Facebook
-                </a>
-                <a href="https://www.instagram.com/life_on_land_2025" class="social-button">
-                    <img src="https://i.ibb.co/0yvwLwcn/instagram.png" alt="Instagram"> Instagram
-                </a>
-                <a href="#Feedback" class="social-button">
-                    <img src="https://i.ibb.co/v47FS0z4/feedback.png" alt="Feedback"> Feedback
-                </a>
-                <a href="content5_ST2(Contact).html" class="social-button">
-                    <img src="https://i.ibb.co/3XyM3RN/contact-us.png" alt="Contact Us"> Contact Us
-                </a><br>
-                <a href="pageEditor_ST2.html" class="social-button"> Student 2 page editor</a>
+            <p>&copy; 2025 Life on Land Initiative. All rights reserved.</p>
+            <div class="social-links" style="margin-top: 30px;">
+                <a href="https://www.facebook.com" class="social-button">Facebook</a>
+                <a href="https://www.instagram.com" class="social-button">Instagram</a>
+                <a href="content5_ST2(Contact).html" class="social-button">Contact Us</a>
             </div>
         </div>
     </footer>
-    <script>
-            window.addEventListener('scroll', function () {
-                const footer = document.querySelector('.footer');
-                const scrollTop = window.scrollY;
-                const windowHeight = window.innerHeight;
-                const documentHeight = document.documentElement.scrollHeight;
-
-                // When user scrolls near the bottom (e.g. within 100px)
-                if (scrollTop + windowHeight >= documentHeight - 50) {
-                    footer.classList.add('visible');
-                } else {
-                    footer.classList.remove('visible');
-                }
-            });
-    </script>
 </body>
 </html>
-
-

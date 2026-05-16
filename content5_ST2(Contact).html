@@ -1,114 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-        <title>Contact Us</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="global.css"><link rel="stylesheet" href="content5_ST2(Contact).css">
-        <link rel="icon" type="image/png" href="https://i.ibb.co/qYN421js/logo.png">
-    </head>
-    <body>
-        <div class="navbar">
-            <div class="navbar-logo">
-                <a href="index.html" class="logo-button">
-                    <img src="https://i.ibb.co/qYN421js/logo.png" class="rotating-logo" alt="Logo">
-                    <span class="logo-text">Life on Land</span>
-                </a>
-            </div>
-            <div class="nav-center">
-                <a href="table.html">Project Table</a>
-                <a href="volunteer.html">Volunteer</a>
-                <a href="profile.html">User Profile</a>
-                <a href="team.html">Our Team</a>
-                <a href="sitemap.html">Site Map</a>
-            </div>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <title>Contact Us | Life on Land</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="global.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/qYN421js/logo.png">
+    <style>
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: flex-start; }
+        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } }
+        .info-card { background: white; padding: 40px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+        .info-item { margin-bottom: 30px; display: flex; gap: 20px; align-items: flex-start; }
+        .info-icon { font-size: 24px; }
+        .info-text h4 { color: var(--primary); margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html" class="logo-button">
+                <img src="https://i.ibb.co/qYN421js/logo.png" style="height: 60px; border-radius: 50%;" alt="Logo">
+                <span class="logo-text">Life on Land</span>
+            </a>
         </div>
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="table.html">Project Table</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="team.html">Our Team</a>
+            <a href="sitemap.html">Site Map</a>
+        </div>
+    </div>
 
+    <div class="content-wrapper">
+        <h1 style="text-align: center;">Get in <span style="color: var(--accent);">Touch</span></h1>
+        <p style="text-align: center; color: #666; font-size: 18px; margin-bottom: 60px;">Have questions about conservation? Reach out to our global team.</p>
 
-        <div class="contact-wrapper">
-            <section class="contact-container">
-                <div class="contact-content">
-                    <h1>Contact Us</h1>
-                    <div class="contact-form">
-                        <form id="contactForm">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+        <div class="contact-grid">
+            <div class="form-card" style="background: white; padding: 40px; border-radius: 30px; box-shadow: 0 20px 50px rgba(0,0,0,0.05);">
+                <form id="contactForm">
+                    <label style="display: block; margin-bottom: 8px; font-weight: 600;">Full Name:</label>
+                    <input type="text" id="name" required style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 20px;">
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                    <label style="display: block; margin-bottom: 8px; font-weight: 600;">Email Address:</label>
+                    <input type="email" id="email" required style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 20px;">
 
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject">
+                    <label style="display: block; margin-bottom: 8px; font-weight: 600;">Subject:</label>
+                    <input type="text" id="subject" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 20px;">
 
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
+                    <label style="display: block; margin-bottom: 8px; font-weight: 600;">Message:</label>
+                    <textarea id="message" rows="6" required style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 20px;"></textarea>
 
-                        <button type="submit">Send Message</button>
-                        </form>
-                    </div>
+                    <button type="submit" class="action-button" style="width: 100%; border: none;">Send Message</button>
+                </form>
+            </div>
 
-                    <div class="contact-info">
-                        <p>📧 <strong>Email Us:</strong> lifeonland2025@gmail.com</p>
-                        <p>📞 <strong>Call us:</strong> (+94) 713456534<br>(+94) 713298675</p>
-                        <p>📍 <strong>Visit us:</strong><br>
-                        No.342, Robert Gunawardana Mawatha,<br>
-                        Colombo 04, Sri Lanka.</p>
+            <div class="info-card">
+                <div class="info-item">
+                    <span class="info-icon">📧</span>
+                    <div class="info-text">
+                        <h4>Email Us</h4>
+                        <p>lifeonland2025@gmail.com</p>
                     </div>
                 </div>
-            </section>
-        </div>
-
-        <script>
-            document.getElementById('contactForm').addEventListener('submit', function(e) {
-                e.preventDefault(); // Prevent page reload
-                const name = document.getElementById('name').value;
-                alert(`Thank you, ${name}! Your message has been sent successfully.`);
-                this.reset(); // Clear the form
-            });
-        </script>
-
-
-
-
-
-        <footer class="footer">
-            <div class="footer-content">
-                <p>&copy; 2025 MyWebsite. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/profile.php?id=61577288455530" class="social-button">
-                        <img src="https://i.ibb.co/HLzJkF0n/facebook.png" alt="facebook" > Facebook
-                    </a>
-                    <a href="https://www.instagram.com/life_on_land_2025" class="social-button">
-                        <img src="https://i.ibb.co/0yvwLwcn/instagram.png" alt="Instagram"> Instagram
-                    </a>
-                    <a href="#Feedback" class="social-button">
-                        <img src="https://i.ibb.co/v47FS0z4/feedback.png" alt="Feedback"> Feedback
-                    </a>
-                    <a href="content5_ST2(Contact).html" class="social-button">
-                        <img src="https://i.ibb.co/3XyM3RN/contact-us.png" alt="Contact Us"> Contact Us
-                    </a><br><br>
-                <a href="pageEditor_ST2.html" class="social-button"> Student 2 page editor</a>
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <div class="info-text">
+                        <h4>Call Us</h4>
+                        <p>(+94) 713456534<br>(+94) 713298675</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div class="info-text">
+                        <h4>Visit Us</h4>
+                        <p>No.342, Robert Gunawardana Mawatha,<br>Colombo 04, Sri Lanka.</p>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
 
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Life on Land Initiative. All rights reserved.</p>
+            <div class="social-links" style="margin-top: 30px;">
+                <a href="https://www.facebook.com" class="social-button">Facebook</a>
+                <a href="https://www.instagram.com" class="social-button">Instagram</a>
+                <a href="content5_ST2(Contact).html" class="social-button">Contact Us</a>
+            </div>
+        </div>
+    </footer>
 
-        <script>
-            window.addEventListener('scroll', function () {
-                const footer = document.querySelector('.footer');
-                const scrollTop = window.scrollY;
-                const windowHeight = window.innerHeight;
-                const documentHeight = document.documentElement.scrollHeight;
-
-                if (scrollTop + windowHeight >= documentHeight - 50) {
-                    footer.classList.add('visible');
-                } else {
-                    footer.classList.remove('visible');
-                }
-            });
-        </script>
-    </body>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert(`Thank you, ${document.getElementById('name').value}! Your message has been sent successfully.`);
+            this.reset();
+        });
+    </script>
+</body>
 </html>
-
-
