@@ -1,0 +1,133 @@
+:root {
+    --primary: #1b5e20;
+    --primary-light: #4c8c4a;
+    --accent: #2e7d32;
+    --text-main: #333333;
+    --text-white: #ffffff;
+    --navbar-bg: rgba(28, 28, 84, 0.9);
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    background-image: url('https://i.ibb.co/bgsMmckL/background-image.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Fixed seams! */
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+/* --- Premium Navbar --- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background: var(--navbar-bg);
+    backdrop-filter: blur(20px);
+    padding: 0 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    color: white;
+    letter-spacing: -1px;
+}
+
+.nav-center {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap; /* Prevents mobile overlap */
+    justify-content: center;
+}
+
+.nav-center a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: var(--transition);
+    font-size: 14px;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-center {
+        gap: 5px;
+    }
+    
+    .nav-center a {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
+
+.nav-center a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* --- Content Containers --- */
+.content-wrapper {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 60px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    border-radius: 50px;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.2);
+    animation: slideIn 0.8s ease-out;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: var(--primary);
+    margin-top: 0;
+}
+
+/* --- Premium Buttons --- */
+.action-button {
+    background: var(--primary);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background: var(--accent);
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* --- Animations --- */
+@keyframes slideIn {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
