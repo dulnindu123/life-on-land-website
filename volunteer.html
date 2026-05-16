@@ -4,82 +4,92 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <title>Volunteer - Life on Land</title>
+    <title>Volunteer | Life on Land</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="volunteer.css">
     <link rel="icon" type="image/png" href="https://i.ibb.co/qYN421js/logo.png">
+    <style>
+        .volunteer-grid { display: flex; gap: 60px; align-items: flex-start; flex-wrap: wrap; }
+        .form-section { flex: 1; min-width: 320px; }
+        .input-group { margin-bottom: 25px; }
+        .input-group label { display: block; margin-bottom: 10px; font-weight: 600; color: var(--primary); }
+        .input-group input, .input-group textarea, .input-group select {
+            width: 100%; padding: 15px; border-radius: 15px; border: 1px solid rgba(0,0,0,0.1); 
+            background: rgba(255,255,255,0.5); font-family: inherit; font-size: 16px;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar">
         <div class="navbar-logo">
             <a href="index.html" class="logo-button">
-                <img src="https://i.ibb.co/qYN421js/logo.png" class="rotating-logo" alt="Logo">
+                <img src="https://i.ibb.co/qYN421js/logo.png" style="height: 60px; border-radius: 50%;" alt="Logo">
                 <span class="logo-text">Life on Land</span>
             </a>
         </div>
         <div class="nav-center">
+            <a href="index.html">Home</a>
             <a href="table.html">Project Table</a>
-            <a href="volunteer.html">Volunteer</a>
-            <a href="profile.html">User Profile</a>
+            <a href="volunteer.html" class="active">Volunteer</a>
             <a href="team.html">Our Team</a>
             <a href="sitemap.html">Site Map</a>
         </div>
     </div>
 
     <div class="content-wrapper">
-        <section class="fade-in">
-            <h1 style="text-align: center;">🤝 Become a Volunteer</h1>
-            <p style="text-align: center; margin-bottom: 40px; color: #666;">Join our global initiative to protect, restore, and promote sustainable use of terrestrial ecosystems.</p>
+        <h1>Join the <span style="color: var(--accent);">Movement</span></h1>
+        <p style="font-size: 18px; color: var(--text-light); margin-bottom: 60px;">Be the change you want to see in the world. Help us restore Earth's terrestrial ecosystems.</p>
 
-            <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: flex-start;">
-                <div class="form-card" style="flex: 1; min-width: 320px; background: white; padding: 40px; border-radius: 30px; box-shadow: 0 20px 50px rgba(0,0,0,0.05);">
-                    <h2>Application Form</h2>
-                    <form id="volunteerForm">
-                        <label for="v-name" style="display: block; margin-bottom: 8px; font-weight: 600;">Full Name:</label>
-                        <input type="text" id="v-name" required placeholder="Jane Doe" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 20px;">
-
-                        <label for="v-email" style="display: block; margin-bottom: 8px; font-weight: 600;">Email Address:</label>
-                        <input type="email" id="v-email" required placeholder="jane@example.com" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 20px;">
-
-                        <label for="v-role" style="display: block; margin-bottom: 8px; font-weight: 600;">Preferred Role:</label>
-                        <select id="v-role" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 20px;">
-                            <option>Tree Planting</option>
-                            <option>Wildlife Monitoring</option>
-                            <option>Community Education</option>
-                            <option>Cleanup Crew</option>
-                        </select>
-
-                        <label for="v-msg" style="display: block; margin-bottom: 8px; font-weight: 600;">Your Motivation:</label>
-                        <textarea id="v-msg" rows="4" required placeholder="Tell us your motivation..." style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid #ddd; margin-bottom: 20px;"></textarea>
-
-                        <button type="submit" class="action-button" style="width: 100%; border: none; cursor: pointer;">Submit Application</button>
-                    </form>
-                </div>
-                
-                <div style="flex: 1; min-width: 320px;">
-                    <img src="https://images.unsplash.com/photo-1559027615-cd94313d5069?auto=format&fit=crop&q=80&w=800" alt="Volunteer" style="width: 100%; border-radius: 40px; box-shadow: 0 30px 60px rgba(0,0,0,0.15);">
-                    <div style="margin-top: 30px; background: #f8f9fa; padding: 30px; border-radius: 30px; border: 1px solid rgba(0,0,0,0.05);">
-                        <h3 style="color: var(--primary); margin-bottom: 20px;">Why Volunteer?</h3>
-                        <ul style="list-style: none; padding: 0; line-height: 2;">
-                            <li>🌱 <strong>Restore</strong> - Help revive degraded land</li>
-                            <li>🐾 <strong>Protect</strong> - Guard endangered wildlife</li>
-                            <li>🌍 <strong>Community</strong> - Join a global network</li>
-                            <li>🎓 <strong>Growth</strong> - Learn professional skills</li>
-                        </ul>
+        <div class="volunteer-grid">
+            <div class="form-section">
+                <form id="volunteerForm">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Your Name" required>
                     </div>
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Preferred Project</label>
+                        <select required>
+                            <option value="">Select a project...</option>
+                            <option value="forest">Forest Restoration</option>
+                            <option value="wildlife">Wildlife Protection</option>
+                            <option value="community">Community Outreach</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Your Message</label>
+                        <textarea rows="5" placeholder="Tell us how you'd like to help..."></textarea>
+                    </div>
+                    <button type="submit" class="action-button" style="width: 100%;">Submit Application</button>
+                </form>
+            </div>
+
+            <div style="flex: 1; min-width: 320px;">
+                <img src="https://images.unsplash.com/photo-1559027615-cd94313d5069?auto=format&fit=crop&q=80&w=800" alt="Volunteer" style="width: 100%; border-radius: 40px; box-shadow: 0 30px 60px rgba(0,0,0,0.15);">
+                <div class="glass-card" style="margin: 30px 0; padding: 30px; border-radius: 30px;">
+                    <h3 style="color: var(--primary); margin-bottom: 20px;">Why Volunteer?</h3>
+                    <ul style="list-style: none; padding: 0; line-height: 2;">
+                        <li>🌱 Make a direct impact on biodiversity</li>
+                        <li>🤝 Meet like-minded environmentalists</li>
+                        <li>🧠 Gain hands-on field experience</li>
+                        <li>🌎 Be a guardian of our collective future</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 MyWebsite. All rights reserved.</p>
-            <div class="social-links" style="display: flex; gap: 15px; justify-content: center; margin-top: 20px;">
-                <a href="https://www.facebook.com/profile.php?id=61577288455530" class="social-button">Facebook</a>
-                <a href="https://www.instagram.com/life_on_land_2025" class="social-button">Instagram</a>
+            <p>&copy; 2025 Life on Land Initiative. All rights reserved.</p>
+            <div class="social-links" style="margin-top: 30px;">
+                <a href="https://www.facebook.com" class="social-button">Facebook</a>
+                <a href="https://www.instagram.com" class="social-button">Instagram</a>
                 <a href="content5_ST2(Contact).html" class="social-button">Contact Us</a>
             </div>
         </div>
@@ -88,7 +98,7 @@
     <script>
         document.getElementById('volunteerForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert(`Thank you, ${document.getElementById('v-name').value}! Your application has been sent.`);
+            alert('Thank you for your application! Our team will reach out to you soon.');
             this.reset();
         });
     </script>
