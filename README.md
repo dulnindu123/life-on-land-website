@@ -18,7 +18,7 @@ A responsive, multi-page web project dedicated to raising awareness about the Un
    ```bash
    git clone https://github.com/dulnindu123/[YOUR-NEW-REPO-NAME].git
    ```
-2. Open the `home.html` file directly in any modern web browser to view the project.
+2. Open the `index.html` file directly in any modern web browser to view the project.
 
 ---
 *Developed by Dulnindu Saranga*
